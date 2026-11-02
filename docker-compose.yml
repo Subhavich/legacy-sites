@@ -1,6 +1,6 @@
 # Legacy immigration sites (static crawls). Open:
 #   http://localhost:8091   admin-division2 (site one)
-#   http://localhost:8090   division2       (site two; needs the big download, see README)
+#   http://localhost:8090   division2       (site two, lean copy without PDF/Word files)
 name: legacy-sites
 services:
   web:

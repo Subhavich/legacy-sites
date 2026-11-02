@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Prepare the legacy-site crawls for serving (standard library only).
+"""Extract the ORIGINAL crawls from backup.zip into sites/ (standard library only).
+This overwrites the lean division2 copy that is committed to git; see README.
 
 The crawler turned URLs like  more_news.php?cid=208  into files named
 more_news.php?cid=208.html.  Windows cannot store "?" in a name, so the

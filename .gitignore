@@ -1,4 +1,2 @@
-# The big site (about 2.9 GB) is restored from backup.zip with tools/prepare.py
-sites/division2.immigration.go.th/
 *.zip
 __pycache__/
