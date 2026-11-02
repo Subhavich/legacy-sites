@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://division2.immigration.go.th/sitemap.xml
+Sitemap: https://division2.immigration.go.th/book/?sitemap.xml
