@@ -1,0 +1,14 @@
+# Legacy immigration sites (static crawls). Open:
+#   http://localhost:8091   admin-division2 (site one)
+#   http://localhost:8090   division2       (site two; needs the big download, see README)
+name: legacy-sites
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "${DIVISION2_PORT:-8090}:80"
+      - "${ADMIN_PORT:-8091}:81"
+    volumes:
+      - ./sites:/sites:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped
